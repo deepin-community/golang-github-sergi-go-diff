@@ -1,0 +1,29 @@
+Source: golang-github-sergi-go-diff
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Anthony Fok <foka@debian.org>,
+           Utkarsh Gupta <guptautkarsh2102@gmail.com>,
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-github-stretchr-testify-dev,
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-sergi-go-diff
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-sergi-go-diff.git
+Homepage: https://github.com/sergi/go-diff
+XS-Go-Import-Path: github.com/sergi/go-diff
+Rules-Requires-Root: no
+
+Package: golang-github-sergi-go-diff-dev
+Architecture: all
+Depends: ${misc:Depends},
+Description: Diff, match and patch text in Go
+ This library provides algorithms to perform operations required for
+ synchronizing plain text.
+ .
+ These operations include:
+   * Compare two texts and return their differences.
+   * Perform fuzzy matching of text.
+   * Apply patches onto text.
